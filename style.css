@@ -1,0 +1,100 @@
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.password-generator-container{
+    background-color: blanchedalmond;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    width: 500px;
+    margin: 10px;
+}
+
+.output-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.gen-btn{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace bold;
+}
+
+.message{
+    margin-top: 20px;
+    /* font-size: 14px; */
+    color: #4CAF60;
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    background-color: lightgreen;
+    right: 20px;
+    top: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    font-size: 20px;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace bold;
+    transition: right 0.5s ease;
+}
+
+input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Courier New', Courier, monospace bold;
+
+}
+
+input::placeholder{
+    color: #999;
+    font-style: italic;
+    letter-spacing: normal;
+}
+
+.fa-copy{
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    opacity: 0.7;
+}
+
+.fa-copy:hover{
+    color: #4CAF50;
+    opacity: 1;
+}
+
+.gen-btn:hover{
+    background-color: #45a049;
+}
+
+.gen-btn:active{
+    background-color: #3e8e41;
+    transform: scale(0.95);
+}
+
+.active.message{
+    right: -500px;
+}
